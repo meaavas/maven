@@ -1,11 +1,11 @@
 node('maven'){
     stage('Checkout'){
-        checkout scm //commenting made some changes
+        checkout scm //commenting
     }
     stage('Printing Parameter'){
         sh "echo ${environment}"
     }
-    stage('Build'){
+    stage('Build'){ //build stage 
         sh "sh untilloop.sh"
     }
     if (params.environment == 'Dev'){
