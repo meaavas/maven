@@ -10,7 +10,7 @@ node('maven'){
     }
     if (params.environment == 'Dev'){
         stage('Array'){
-            sh "sh array"
+            sh "sh array" //comment
         }
     }
     stage('Notify'){
