@@ -3,7 +3,7 @@
         label 'maven'
     }  
     tools {
-        jdk 'openjdk8'
+        jdk 'openjdk'
         maven '363'
     } 
     options {
