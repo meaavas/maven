@@ -13,7 +13,7 @@
         stage ('Test') {
             steps {
                 sh "mvn clean test surefire-report:report-only"
-                publishHTML([allowMissing: true, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '/target/site', reportFiles: 'surefire-report.html', reportName: 'HTML Report', reportTitles: ''])
+                publishHTML([allowMissing: true, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '/home/ec2-user/jenkinsws/workspace/maven/jenkins_demo/target/site', reportFiles: 'surefire-report.html', reportName: 'HTML Report', reportTitles: ''])
             }
         }
         stage('Packaging'){
