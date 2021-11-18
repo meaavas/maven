@@ -11,6 +11,7 @@ module "vpc" {
     Name        = "myApplication"
     #more comments
     Environment = "Production"
+    #comments
   }
 }
 
