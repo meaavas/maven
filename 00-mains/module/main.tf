@@ -9,6 +9,7 @@ module "vpc" {
   cidr_block = "10.10.0.0/26"
   tags = {
     Name        = "myApplication"
+    #more comments
     Environment = "Production"
   }
 }
